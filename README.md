@@ -50,3 +50,9 @@ template:` <h1 v-for="country in countries">{{date}}--{{country}}<h1>`,
   
   8. v-html directive to render string into HTML elements
   
+  9. Props are used to handle data passed  from one component to another.
+  [Props](https://i.imgur.com/yVQVhS7.png)
+  
+  10. Custom Events can be emitted by
+  [firing a custom event](https://i.imgur.com/yVQVhS7.png)
+  
