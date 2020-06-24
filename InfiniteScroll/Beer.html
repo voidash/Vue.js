@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Api as seen on Sdrasner course </title>
+    <script src="main.js" defer>
+    
+    </script>
+    <script src="vue.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h1>Beers for You</h1>
+        <div v-if="beers.length === 0">Loading.....</div>
+        <div v-for="beer in beers">
+            <div>
+               <h2>{{beer.name}}</h2>
+               <img :src="beer.img" alt="">
+               <p>{{beer.desc}}</p>
+                
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
